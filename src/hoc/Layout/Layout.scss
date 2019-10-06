@@ -1,0 +1,68 @@
+.Layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .Musk {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .7);
+  }
+
+  .Exit {
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    color: white;
+    &:hover{
+      cursor: pointer;
+      color: #4CAF50;
+    }
+  }
+}
+
+.Nav {
+  background: #343a40;
+  min-height: 55px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+
+    li {
+      margin-right: 15px;
+
+      a {
+        color: rgba(255, 255, 255, .5);
+        text-decoration: none;
+
+        .active, .wfm-active {
+          font-weight: bold;
+          color: red;
+        }
+      }
+    }
+  }
+
+  h2 {
+    margin: 0;
+    position: absolute;
+    padding: 9px 0 0 17px;
+    color: white;
+    font-size: 26px;
+  }
+}
