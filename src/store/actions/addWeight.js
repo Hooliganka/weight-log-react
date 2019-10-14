@@ -3,7 +3,7 @@ import {ADD_ACTION_MUSK, ADD_SUCCESS, ERROR_DATA} from "./actionsTypes";
 export const add = (weight_cat, comments) => async dispatch => {
     dispatch(actionsMusk(true));
 
-    fetch('http://127.0.0.1:8000/add_weight', {
+    fetch('https://api.murka.mr-earnest.ru/add_weight', {
         method: 'POST', body: JSON.stringify({
             weight_cat: weight_cat,
             comments: comments

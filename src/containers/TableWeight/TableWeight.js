@@ -12,7 +12,7 @@ class TableWeight extends Component {
     };
 
     componentDidMount() {
-        fetch('http://127.0.0.1:8000/get_weight', {
+        fetch('https://api.murka.mr-earnest.ru/get_weight', {
             // headers: {'Content-Type': 'application/x-www-form-urlencoded', 'auth-token': localStorage.getItem('token')}
             headers: {'Content-Type': 'application/json', 'Authorization': localStorage.getItem('token')}
         }).then(response => response.json()).then((data) => {

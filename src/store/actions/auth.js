@@ -2,7 +2,7 @@ import {ACTION_MUSK, AUTH_LOGOUT, AUTH_SUCCESS} from "./actionsTypes";
 
 export const auth = (username, password) => async dispatch => {
     dispatch(actionMusk(true));
-    fetch('http://127.0.0.1:8000/login', {
+    fetch('https://api.murka.mr-earnest.ru/login', {
         method: 'POST', body: JSON.stringify({
             username: username,
             password: password
@@ -31,7 +31,7 @@ export function authSuccess(token) {
 }
 
 export function logOut() {
-    fetch('http://127.0.0.1:8000/logout', {
+    fetch('https://api.murka.mr-earnest.ru/logout', {
         method: 'POST',
         headers: {'Content-Type': 'application/json', 'Authorization': localStorage.getItem('token')}
     }).catch(e => {
