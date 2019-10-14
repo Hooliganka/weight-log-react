@@ -11,7 +11,7 @@ class Layout extends Component {
                 {this.props.is_musk ? <div className={classes.Musk}/> : null}
                 <div>
                     <nav className={classes.Nav}>
-                        <h2>Обследование мурки</h2>
+                        <h2>Контроль веса мурки</h2>
                         {
                             this.props.auth ?
                                 <ul>

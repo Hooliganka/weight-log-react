@@ -13,7 +13,7 @@ class Auth extends Component {
             username: {
                 value: '',
                 type: 'text',
-                label: 'Login',
+                label: 'Логин',
                 touched: false,
             },
             password: {
